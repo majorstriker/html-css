@@ -195,14 +195,6 @@ a {
     color: #F16D7F;
 }
 
-.button__all {
-    border: 1px #FF6A6A;
-    width: 212px;
-    height: 28px;
-    text-align: center;
-    padding-bottom: 70px;
-}
-
 @media (max-width: 1024px) {
     .center {
         padding-left: calc(50% - 368px);

@@ -194,3 +194,53 @@ a {
     line-height: 19px;
     color: #F16D7F;
 }
+
+.button__all {
+    border: 1px #FF6A6A;
+    width: 212px;
+    height: 28px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .header {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .top__content {
+        padding-right: 34px;
+        padding-left: 39px;
+    }
+    .top__title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+        color: #222222;
+    }
+    .top__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+    .top__info {
+        height: 92px;
+    }
+    .promo {
+        padding-bottom: 56px;
+    }
+    .products {
+        padding-bottom: 32px;
+    }
+    .products__content {
+        gap: 16px;
+        margin-top: 74px;
+    }
+}

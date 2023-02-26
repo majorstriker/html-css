@@ -330,68 +330,72 @@
     }
     
     .social__1 {
-        padding: 8px 11px;
+        height: 32px;
+        width: 32px;
         background-color: #fff;
     }
     
     .social__2 {
-        padding: 8px;
+        height: 32px;
+        width: 32px;
         background-color: #fff;
     }
     
     .social__3 {
-        padding: 8px 9px;
+        height: 29px;
+        width: 27px;
+        padding-top: 3px;
+        padding-left: 5px;
         background-color: #fff;
     }
     
     .social__4 {
-        padding: 8px;
+        height: 32px;
+        width: 32px;
         background-color: #fff;
+    }
+    
+    a svg #facebook,
+    a svg #instagram,
+    a svg #pinterest,
+    a svg #twitter {
+        transition: 200ms;
+        transition-timing-function: ease-in-out;
+        -webkit-transition: 200ms;
+        -webkit-transition-timing-function: ease-in-out;
+    }
+    
+    a svg:hover #facebook,
+    a svg:hover #instagram,
+    a svg:hover #pinterest,
+    a svg:hover #twitter {
+        fill: #FFFFFF;
     }
     
     .social__1:hover {
         background-color: #F16D7F;
     }
     
-    .social__1:hover img {
-        fill: white;
-    }
-    
     .social__2:hover {
         background-color: #F16D7F;
-    }
-    
-    .social__2:hover img {
-        fill: white;
     }
     
     .social__3:hover {
         background-color: #F16D7F;
     }
     
-    .social__3:hover img {
-        fill: white;
-    }
-    
     .social__4:hover {
         background-color: #F16D7F;
     }
     
-    .social__4:hover img {
-        fill: white;
-    }
-    
     .comunity {
         height: 438px;
-        position: relative;
         display: flex;
         justify-content: center;
     }
     
     .comunity-conteiner {
-        padding-right: 97px;
-        width: 100%;
-        height: 100%;
+        gap: 327px;
         display: flex;
         position: absolute;
         flex-direction: row;
@@ -411,8 +415,8 @@
     }
     
     .com__bg {
+        position: relative;
         opacity: 0.25;
-        filter: alpha(opacity 25);
     }
     
     .com-left img {
@@ -466,6 +470,8 @@
     }
     
     .com-right {
+        height: 438px;
+        padding-right: 97px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -579,7 +585,8 @@
             gap: 48px;
         }
         .comunity {
-            height: 613px;
+            height: 614px;
+            background-color: #f1f1f1
         }
         .comunity-conteiner {
             display: flex;
@@ -589,17 +596,35 @@
             padding-right: 0px;
             width: auto;
             height: auto;
-            padding-top: 64px;
+            padding-top: 53px;
+            gap: 48px;
         }
         .com-left {
             width: 360px;
             height: 225px;
             display: flex;
-            margin-top: 64px;
+            margin-top: 0px;
+            padding-left: 0px;
             flex-wrap: wrap;
             align-items: center;
             align-content: center;
             justify-content: center;
+        }
+        .com__bg {
+            height: 438px;
+            align-self: flex-end;
+        }
+        .com-lefttxt {
+            margin-left: 0px;
+        }
+        .comunity__txt {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .com-right {
+            height: auto;
+            padding-right: 0px;
         }
         .subscribe__txt {
             font-weight: 700;

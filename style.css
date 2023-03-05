@@ -101,6 +101,15 @@ a {
   position: relative;
 }
 
+.slider_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .arrows {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +119,7 @@ a {
           justify-content: space-between;
   position: absolute;
   top: 365px;
+  width: 100vw;
 }
 
 .arrow-right {
@@ -837,6 +847,9 @@ button:focus {
   }
   .promo {
     padding-bottom: 56px;
+  }
+  .promo__item_big {
+    min-height: auto;
   }
   .products {
     padding-bottom: 32px;

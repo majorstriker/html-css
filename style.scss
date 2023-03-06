@@ -59,6 +59,11 @@ a {
     color: $colorSelectSite;
 }
 
+.breadcrumbs:last-child {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
+
 .breadcrumbs__link {
     font-style: normal;
     font-weight: 300;
@@ -67,9 +72,15 @@ a {
     color: #636363;
 }
 
-.breadcrumbs__link_site {
-    font-weight: 700;
+.breadcrumbs__link:not(:last-child):after {
+    content: "/";
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.breadcrumbs__link_site:last-child {
     color: $colorSelectSite;
+    font-weight: bold;
 }
 
 .slider {

@@ -95,6 +95,10 @@ a {
   color: #636363;
 }
 
+.breadcrumbs__link:hover {
+  font-weight: bold;
+}
+
 .breadcrumbs__link:not(:last-child):after {
   content: "/";
   padding-left: 8px;
@@ -204,15 +208,76 @@ a {
   color: #EF5B70;
 }
 
+.sort {
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+}
+
+.sort__details {
+  position: relative;
+}
+
+.sort__summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort__check {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.sort__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.sort__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  position: absolute;
+  left: 11px;
+  top: 28px;
+}
+
+.sort__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .add_to_cart_info {
   margin-top: 48px;
   padding: 15px 57px 9px 24px;
   border: 1px solid #FF6A6A;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #F26376;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,6 +286,24 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.add_to_cart_info svg path {
+  fill: #F16D7F;
+}
+
+.add_to_cart_info:hover svg path {
+  fill: #FFF;
+}
+
+.add_to_cart_info:hover {
+  background-color: #F16D7F;
+  color: #FFF;
 }
 
 .line2 {

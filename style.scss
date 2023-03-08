@@ -72,6 +72,10 @@ a {
     color: #636363;
 }
 
+.breadcrumbs__link:hover {
+    font-weight: bold;
+}
+
 .breadcrumbs__link:not(:last-child):after {
     content: "/";
     padding-left: 8px;
@@ -163,19 +167,76 @@ a {
     color: #EF5B70;
 }
 
+.sort {
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+    &__details {
+        position: relative;
+    }
+    &__summary {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__check {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+    }
+    &__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: 11px;
+        top: 28px;
+    }
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+    }
+}
+
 .add_to_cart_info {
     margin-top: 48px;
     padding: 15px 57px 9px 24px;
     border: 1px solid #FF6A6A;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
     display: flex;
     gap: 23px;
     background-color: #fff;
     align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorSelectSite;
+}
+
+.add_to_cart_info svg path {
+    fill: $colorSelectSite;
+}
+
+.add_to_cart_info:hover svg path {
+    fill: #FFF;
+}
+
+.add_to_cart_info:hover {
+    background-color: $colorSelectSite;
+    color: #FFF;
 }
 
 .line2 {

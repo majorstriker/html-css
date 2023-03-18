@@ -137,13 +137,6 @@ a {
   width: 100vw;
 }
 
-.arrow-right {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-end;
-          flex-direction: flex-end;
-}
-
 .catalog__info {
   border: 1px solid #EAEAEA;
   background-color: #fff;
@@ -1445,6 +1438,41 @@ button:focus {
     line-height: 29px;
     text-align: center;
   }
+  .registration__block {
+    padding-top: 40px;
+    gap: 22px;
+  }
+  .cart__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 64px;
+  }
+  .cart__block__left__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 48px;
+    margin-top: 22px;
+  }
+  .cart__block__right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .products {
+    padding-bottom: 129px;
+  }
+  .product-third {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1541,6 +1569,44 @@ button:focus {
     line-height: 21px;
     text-align: center;
     color: #222224;
+  }
+  .top-head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .registration__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 40px;
+  }
+  .registration__block__right__info__h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .registration__block__right__info__heading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .registration__block__right__info__list {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
   }
   .footer {
     padding-bottom: 9px;
